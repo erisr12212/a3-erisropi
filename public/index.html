@@ -1,21 +1,17 @@
 <!doctype html>
 <html lang='en'>
-  <head>
-    <title>CS4241 Assignment 2</title>
-    <meta charset='utf-8' />
-    <script src='js/main.js'></script>
-    <link rel='stylesheet' href='css/main.css' />
-    
-    <!-- get rid of favicon error -->
-    <link rel='icon' href='data:;base64,iVBORw0KGgo=' />
+  <head>  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <title>Login Page</title>
+  <meta charset='utf-8' />
+
   </head>
   <body>
-    <form>
-      <input type='text' id='exercise' placeholder='Exercise Name'>
-      <input type='number' id='sets' placeholder='Number of Sets'>
-      <input type='number' id='reps' placeholder='Number of reps'>
-      <button>submit</button>
-
+    <h1>Login Page </h1>
+    <form action='/login' method='POST'>
+      <input type='text' name='username'  placeholder='Username' class="form-control mb-3">
+      <input type='password' name='password'  placeholder='Password' class="form-control mb-3">
+      <input type='submit' class="btn btn-primary">
     </form>
   </body>
 </html>
